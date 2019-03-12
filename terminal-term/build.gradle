@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
@@ -11,17 +11,13 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.termux"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 66
-        versionName "0.66"
     }
 
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
