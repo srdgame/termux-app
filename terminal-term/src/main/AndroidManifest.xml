@@ -49,7 +49,7 @@
             android:name="com.termux.app.TermuxHelpActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Material.Light.DarkActionBar"
-            android:parentActivityName=".app.TermuxActivity"
+            android:parentActivityName="com.termux.app.TermuxActivity"
             android:resizeableActivity="true"
             android:label="@string/application_name" />
 
@@ -111,7 +111,7 @@
             android:name="com.termux.app.TermuxService"
             android:exported="false" />
 
-        <receiver android:name=".app.TermuxOpenReceiver" />
+        <receiver android:name="com.termux.app.TermuxOpenReceiver" />
 
         <provider android:authorities="com.termux.files"
                   android:readPermission="android.permission.permRead"
